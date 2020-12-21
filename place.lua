@@ -708,5 +708,5 @@ f:Label("https://discord.gg/T2nutvFbeN",{
     BgColor = Color3.fromRGB(247, 95, 28); 
 }) 
 f:Button("Copy Discord Link",function()
-    setclipboard("https://discord.gg/aDRStgw")
+    setclipboard("https://discord.gg/T2nutvFbeN")
 end)
