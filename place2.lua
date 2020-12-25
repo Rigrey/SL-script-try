@@ -393,7 +393,7 @@ if warplace then
 
 	c:Slider("Tween Speed",{
 		min = 500; 
-		max = 5000;
+		max = 7000;
 		precise = false;
 		},function(speed)
 		getgenv().speed = speed
