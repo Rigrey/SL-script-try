@@ -63,7 +63,7 @@ if villageplace or game.PlaceId == trainingplace or game.PlaceId == rainplace or
 	local speed
 	b:Slider("Tween Speed",{
 		min = 500; 
-		max = 10000;
+		max = 5000;
 		precise = false;
 		},function(speed)
 		getgenv().speed = speed
@@ -393,7 +393,7 @@ if warplace then
 
 	c:Slider("Tween Speed",{
 		min = 500; 
-		max = 7000;
+		max = 5000;
 		precise = false;
 		},function(speed)
 		getgenv().speed = speed
