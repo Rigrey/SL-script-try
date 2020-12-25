@@ -399,7 +399,7 @@ if warplace then
 		getgenv().speed = speed
 	end)
 	local reset
-	c:Toggle("Reset after round 21",function(bool)
+	c:Toggle("Reset after round 31",function(bool)
 		reset = bool
 	end)
 	--Suggested by Moddi#2715
@@ -480,7 +480,7 @@ if warplace then
 				end
 				if reset then
 					for i,v in pairs(game:GetService("Workspace"):GetChildren()) do
-						if v.Name == "warserver" and v:FindFirstChild("round").Value > 20 then
+						if v.Name == "warserver" and v:FindFirstChild("round").Value > 30 then
 							wait(5)
 							player.Character:BreakJoints()
 							repeat wait()
@@ -518,7 +518,7 @@ if warplace then
 				end
 				if reset then
 					for i,v in pairs(game:GetService("Workspace"):GetChildren()) do
-						if v.Name == "warserver" and v:FindFirstChild("round").Value > 20 then
+						if v.Name == "warserver" and v:FindFirstChild("round").Value > 30 then
 							wait(5)
 							player.Character:BreakJoints()
 							repeat wait()
