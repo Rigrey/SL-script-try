@@ -1,3 +1,12 @@
+--[[
+GAME LINK https://www.roblox.com/games/4616652839/TEN-TAILS-Shinobi-Life-2
+v3rm: https://v3rmillion.net/showthread.php?tid=1063031
+Discord: reav#2966
+Discord Server: https://discord.gg/aDRStgw
+Usage:
+loadstring(game:HttpGet("https://raw.githubusercontent.com/reavscripts/sl2_autofarm/main/main.lua", true))()
+]]
+
 repeat wait() until game:IsLoaded()
 --old-antitp bypass
 if workspace:FindFirstChild("CCoff") then
@@ -43,7 +52,7 @@ _G.MainTextColor = Color3.fromRGB(255, 255, 255);
 _G.MainColor = Color3.fromRGB(247, 95, 28);
 _G.SliderColor = Color3.fromRGB(247, 95, 28);
 getgenv().speed = 500
-local w = library:CreateWindow("игра")
+local w = library:CreateWindow("Shindo Life")
 if villageplace or game.PlaceId == trainingplace or game.PlaceId == rainplace or game.PlaceId == akatsukiplace or game.PlaceId == forestplace then
 	--AUTOFARM
 	local b = w:CreateFolder("AutoFarm")
@@ -63,7 +72,7 @@ if villageplace or game.PlaceId == trainingplace or game.PlaceId == rainplace or
 	local speed
 	b:Slider("Tween Speed",{
 		min = 500; 
-		max = 10000;
+		max = 5000;
 		precise = false;
 		},function(speed)
 		getgenv().speed = speed
@@ -393,13 +402,13 @@ if warplace then
 
 	c:Slider("Tween Speed",{
 		min = 500; 
-		max = 5001;
+		max = 5000;
 		precise = false;
 		},function(speed)
 		getgenv().speed = speed
 	end)
 	local reset
-	c:Toggle("Reset after round 31",function(bool)
+	c:Toggle("Reset after round 21",function(bool)
 		reset = bool
 	end)
 	--Suggested by Moddi#2715
@@ -697,16 +706,16 @@ local f = w:CreateFolder("Misc")
 f:Box("Teleport to PS","string",function(tpps)
     game.Players.LocalPlayer.startevent:FireServer("teleporttoprivate", tpps)
 end)
-f:Label("made by rigrey#2443 | ver 4.2",{
+f:Label("made by reav#2966 | ver 4.2",{
     TextSize = 15;
     TextColor = Color3.fromRGB(255,255,255); 
     BgColor = Color3.fromRGB(247, 95, 28);
 }) 
-f:Label("https://discord.gg/T2nutvFbeN",{
+f:Label("https://discord.gg/aDRStgw",{
     TextSize = 17;
     TextColor = Color3.fromRGB(255,255,255); 
     BgColor = Color3.fromRGB(247, 95, 28); 
 }) 
 f:Button("Copy Discord Link",function()
-    setclipboard("https://discord.gg/T2nutvFbeN")
+    setclipboard("https://discord.gg/aDRStgw")
 end)
