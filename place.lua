@@ -480,7 +480,7 @@ if warplace then
 				end
 				if reset then
 					for i,v in pairs(game:GetService("Workspace"):GetChildren()) do
-						if v.Name == "warserver" and v:FindFirstChild("round").Value > 30 then
+						if v.Name == "warserver" and v:FindFirstChild("round").Value > 31 then
 							wait(5)
 							player.Character:BreakJoints()
 							repeat wait()
@@ -518,7 +518,7 @@ if warplace then
 				end
 				if reset then
 					for i,v in pairs(game:GetService("Workspace"):GetChildren()) do
-						if v.Name == "warserver" and v:FindFirstChild("round").Value > 30 then
+						if v.Name == "warserver" and v:FindFirstChild("round").Value > 31 then
 							wait(5)
 							player.Character:BreakJoints()
 							repeat wait()
