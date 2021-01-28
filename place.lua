@@ -408,7 +408,7 @@ if warplace then
 		getgenv().speed = speed
 	end)
 	local reset
-	c:Toggle("Reset after round 21",function(bool)
+	c:Toggle("Reset after round 16",function(bool)
 		reset = bool
 	end)
 	--Suggested by Moddi#2715
