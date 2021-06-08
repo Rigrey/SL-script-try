@@ -52,7 +52,9 @@ _G.MainTextColor = Color3.fromRGB(255, 255, 255);
 _G.MainColor = Color3.fromRGB(247, 95, 28);
 _G.SliderColor = Color3.fromRGB(247, 95, 28);
 getgenv().speed = 500
-local w = library:CreateWindow("Shindo Life")	--AUTOFARM
+local w = library:CreateWindow("Shindo Life")
+if villageplace or game.PlaceId == trainingplace or game.PlaceId == rainplace or game.PlaceId == akatsukiplace or game.PlaceId == forestplace then
+	--AUTOFARM
 	local b = w:CreateFolder("AutoFarm")
 	b:Label("To prevent issues farm in a ps",{
 		TextSize = 16;
