@@ -26,6 +26,7 @@ local menuplace = 4616652839
 local forestplace = 5447073001
 local rainplace = 5084678830
 local trainingplace = 5431071837
+local new = 6901575446
 local akatsukiplace = 5431069982
 local worldxplace = 5943874201
 local villageplace = game:GetService("Workspace"):FindFirstChild("rank")
@@ -53,7 +54,7 @@ _G.MainColor = Color3.fromRGB(247, 95, 28);
 _G.SliderColor = Color3.fromRGB(247, 95, 28);
 getgenv().speed = 500
 local w = library:CreateWindow("Shindo Life")
-if villageplace or game.PlaceId == trainingplace or game.PlaceId == rainplace or game.PlaceId == akatsukiplace or game.PlaceId == forestplace then
+if villageplace or game.PlaceId == trainingplace or game.PlaceId == rainplace or game.PlaceId == akatsukiplace or game.PlaceId == forestplace or game.PlaceId == new then
 	--AUTOFARM
 	local b = w:CreateFolder("AutoFarm")
 	b:Label("To prevent issues farm in a ps",{
